@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../snn_implementation.srcs/sources_1/new/control.v" \
+"../../../../snn_implementation.srcs/sources_1/new/gen_input.v" \
+"../../../../snn_implementation.srcs/sources_1/new/snn_rgb.v" \
+
+sv xil_defaultlib  \
+"../../../../snn_implementation.srcs/sources_1/new/snn_neuron.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
