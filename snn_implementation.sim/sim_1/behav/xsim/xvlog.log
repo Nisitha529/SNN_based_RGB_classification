@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/control.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module control
-INFO: [VRFC 10-2263] Analyzing Verilog file "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/gen_input.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module gen_input
-INFO: [VRFC 10-2263] Analyzing Verilog file "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_rgb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module snn_rgb

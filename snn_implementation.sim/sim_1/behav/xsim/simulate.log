@@ -1,5 +1,0 @@
-Time resolution is 1 ps
-Failure: Simulation completed
-Time: 27547480 ns  Iteration: 0  Process: /sim_snn_rgb/stimuli_process  File: /media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sim_1/new/tb_snn_rgb.vhd
-$finish called at time : 27547480 ns : File "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sim_1/new/tb_snn_rgb.vhd" Line 167
-INFO: xsimkernel Simulation Memory Usage: 113876 KB (Peak: 162948 KB), Simulation CPU Usage: 151750 ms

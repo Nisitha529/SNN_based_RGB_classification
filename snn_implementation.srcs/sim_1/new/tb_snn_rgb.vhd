@@ -22,6 +22,7 @@ end sim_snn_rgb;
 architecture sim of sim_snn_rgb is
 
 -- define constants for simulation
+--  constant stimuli_filename  : string  := "Video_Generator_Image.ppm";--"/media/nisitha/My_Passport/MOODLE/Vivado_projects/Spiking-Neural-Network-on-FPGA-main/SNN-RGB/SNN-RGB.sim/sim_1/behav/xsim/test10.ppm";
   constant stimuli_filename  : string  := "/media/nisitha/My_Passport/MOODLE/Vivado_projects/Spiking-Neural-Network-on-FPGA-main/SNN-RGB/SNN-RGB.sim/sim_1/behav/xsim/test10.ppm";
   constant response_filename : string  := "test10_snn-out.ppm";
   constant x_blank           : integer := 100;   -- horizontal blanking
