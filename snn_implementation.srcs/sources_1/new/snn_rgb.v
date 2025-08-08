@@ -40,6 +40,8 @@ module snn_rgb #(
     reg [7:0]  num_out0_sp    = 8'd0;      // count of spikes from output neuron 0
     reg [7:0]  num_out1_sp    = 8'd0;      // count of spikes from output neuron 1
     reg        r_out_1, g_out_1, b_out_1;  // single-bit signals for output color
+    
+    wire [6:0] spikes_out_ly_1;
 
     // Constants (matching VHDL constants)
     localparam integer sp_steps        = 64;   // number of timesteps per pixel evaluation
@@ -77,92 +79,105 @@ module snn_rgb #(
         .g_sp  (g_sp),
         .b_sp  (b_sp)
     );
-
-  neuron_1 #(
-    .NUM_INPUTS(NUM_INPUTS_HIDDEN),
-    .WEIGHTS({-1,  10, 103,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
-    .BIAS(-79),
-    .V_TH(v_th)
-  ) hidden0_inst (
-    .clk(clk), .reset(reset),
-    .spikes_i({b_sp, g_sp, r_sp}),
-    .neuron_reset(res_ly_1),
-    .spike_out(h_0)
+    
+  layer1 #(
+    .NUM_INPUTS_HIDDEN (NUM_INPUTS_HIDDEN),
+    .NUM_INPUTS_OUT    (NUM_INPUTS_OUT)
+  ) layer1_01 (
+    .clk               (clk),
+    .reset             (reset),
+    
+    .neuron_reset      (res_ly_1),
+    .spikes_in         ({b_sp, g_sp, r_sp}),
+    
+    .spikes_out        (spikes_out_ly_1)
   );
 
+//  neuron_1 #(
+//    .NUM_INPUTS(NUM_INPUTS_HIDDEN),
+//    .WEIGHTS({-1,  10, 103,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
+//    .BIAS(-79),
+//    .V_TH(v_th)
+//  ) hidden0_inst (
+//    .clk(clk), .reset(reset),
+//    .spikes_i({b_sp, g_sp, r_sp}),
+//    .neuron_reset(res_ly_1),
+//    .spike_out(h_0)
+//  );
 
-  neuron_1 #(
-    .NUM_INPUTS(3),
-    .WEIGHTS({-74, -75, -131,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
-    .BIAS(27),
-    .V_TH(v_th)
-  ) hidden1_inst (
-    .clk(clk), .reset(reset),
-    .spikes_i({b_sp, g_sp, r_sp}),
-    .neuron_reset(res_ly_1),
-    .spike_out(h_1)
-  );
 
-  neuron_1 #(
-    .NUM_INPUTS(3),
-    .WEIGHTS({-113, -184, -208,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
-    .BIAS(210),
-    .V_TH(v_th)
-  ) hidden2_inst (
-    .clk(clk), .reset(reset),
-    .spikes_i({b_sp, g_sp, r_sp}),
-    .neuron_reset(res_ly_1),
-    .spike_out(h_2)
-  );
+//  neuron_1 #(
+//    .NUM_INPUTS(3),
+//    .WEIGHTS({-74, -75, -131,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
+//    .BIAS(27),
+//    .V_TH(v_th)
+//  ) hidden1_inst (
+//    .clk(clk), .reset(reset),
+//    .spikes_i({b_sp, g_sp, r_sp}),
+//    .neuron_reset(res_ly_1),
+//    .spike_out(h_1)
+//  );
 
-  neuron_1 #(
-    .NUM_INPUTS(3),
-    .WEIGHTS({83, 47, -79,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
-    .BIAS(-43),
-    .V_TH(v_th)
-  ) hidden3_inst (
-    .clk(clk), .reset(reset),
-    .spikes_i({b_sp, g_sp, r_sp}),
-    .neuron_reset(res_ly_1),
-    .spike_out(h_3)
-  );
+//  neuron_1 #(
+//    .NUM_INPUTS(3),
+//    .WEIGHTS({-113, -184, -208,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
+//    .BIAS(210),
+//    .V_TH(v_th)
+//  ) hidden2_inst (
+//    .clk(clk), .reset(reset),
+//    .spikes_i({b_sp, g_sp, r_sp}),
+//    .neuron_reset(res_ly_1),
+//    .spike_out(h_2)
+//  );
 
-  neuron_1 #(
-    .NUM_INPUTS(3),
-    .WEIGHTS({11, 74, -61,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
-    .BIAS(-42),
-    .V_TH(v_th)
-  ) hidden4_inst (
-    .clk(clk), .reset(reset),
-    .spikes_i({b_sp, g_sp, r_sp}),
-    .neuron_reset(res_ly_1),
-    .spike_out(h_4)
-  );
+//  neuron_1 #(
+//    .NUM_INPUTS(3),
+//    .WEIGHTS({83, 47, -79,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
+//    .BIAS(-43),
+//    .V_TH(v_th)
+//  ) hidden3_inst (
+//    .clk(clk), .reset(reset),
+//    .spikes_i({b_sp, g_sp, r_sp}),
+//    .neuron_reset(res_ly_1),
+//    .spike_out(h_3)
+//  );
 
-  neuron_1 #(
-    .NUM_INPUTS(3),
-    .WEIGHTS({46, -13, 61,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
-    .BIAS(-78),
-    .V_TH(v_th)
-  ) hidden5_inst (
-    .clk(clk), .reset(reset),
-    .spikes_i({b_sp, g_sp, r_sp}),
-    .neuron_reset(res_ly_1),
-    .spike_out(h_5)
-  );
+//  neuron_1 #(
+//    .NUM_INPUTS(3),
+//    .WEIGHTS({11, 74, -61,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
+//    .BIAS(-42),
+//    .V_TH(v_th)
+//  ) hidden4_inst (
+//    .clk(clk), .reset(reset),
+//    .spikes_i({b_sp, g_sp, r_sp}),
+//    .neuron_reset(res_ly_1),
+//    .spike_out(h_4)
+//  );
 
-    neuron_1 #(
-      .NUM_INPUTS(3),
-      .WEIGHTS({125, 179, 168,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
-      .BIAS(-216),
-      .V_TH(v_th)
-    ) hidden6_inst (
-      .clk(clk),
-      .reset(reset),
-      .spikes_i({b_sp, g_sp, r_sp}),
-      .neuron_reset(res_ly_1),
-      .spike_out(h_6)
-    );
+//  neuron_1 #(
+//    .NUM_INPUTS(3),
+//    .WEIGHTS({46, -13, 61,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
+//    .BIAS(-78),
+//    .V_TH(v_th)
+//  ) hidden5_inst (
+//    .clk(clk), .reset(reset),
+//    .spikes_i({b_sp, g_sp, r_sp}),
+//    .neuron_reset(res_ly_1),
+//    .spike_out(h_5)
+//  );
+
+//    neuron_1 #(
+//      .NUM_INPUTS(3),
+//      .WEIGHTS({125, 179, 168,8'd0, 8'd0, 8'd0, 8'd0, 8'd0}),
+//      .BIAS(-216),
+//      .V_TH(v_th)
+//    ) hidden6_inst (
+//      .clk(clk),
+//      .reset(reset),
+//      .spikes_i({b_sp, g_sp, r_sp}),
+//      .neuron_reset(res_ly_1),
+//      .spike_out(h_6)
+//    );
 
     // Instantiate output layer neurons (2 neurons in output layer)
     neuron_1 #(
@@ -173,7 +188,7 @@ module snn_rgb #(
     ) output0_inst (
       .clk(clk),
       .reset(reset),
-      .spikes_i({h_6, h_5, h_4, h_3, h_2, h_1, h_0}),
+      .spikes_i(spikes_out_ly_1),
       .neuron_reset(res_ly_2),
       .spike_out(out_0)
     );
@@ -186,7 +201,7 @@ module snn_rgb #(
     ) output1_inst (
       .clk(clk),
       .reset(reset),
-      .spikes_i({h_6, h_5, h_4, h_3, h_2, h_1, h_0}),
+      .spikes_i(spikes_out_ly_1),
       .neuron_reset(res_ly_2),
       .spike_out(out_1)
     );

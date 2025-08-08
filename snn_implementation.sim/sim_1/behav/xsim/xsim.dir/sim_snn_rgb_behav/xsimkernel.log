@@ -1,4 +1,4 @@
-Running: xsim.dir/sim_snn_rgb_behav/xsimk -simmode gui -wdb sim_snn_rgb_behav.wdb -simrunnum 0 -socket 54911
+Running: xsim.dir/sim_snn_rgb_behav/xsimk -simmode gui -wdb sim_snn_rgb_behav.wdb -simrunnum 0 -socket 58711
 Design successfully loaded
-Design Loading Memory Usage: 23680 KB (Peak: 24240 KB)
+Design Loading Memory Usage: 23668 KB (Peak: 24232 KB)
 Design Loading CPU Usage: 30 ms

@@ -12,6 +12,17 @@ WARNING: [VRFC 10-3705] select index 6 into 'spikes_i' is out of bounds [/media/
 WARNING: [VRFC 10-3705] select index 7 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:37]
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/control.v" Line 1. Module control(delay=75,layer_delay=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/gen_input.v" Line 1. Module gen_input doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=3,WEIGHTS='{-1,10,103,32'sb0,32'sb0,32'sb0,32'sb0,32'sb0},BIAS=-79,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=3,WEIGHTS='{-74,-75,-131,32'sb0,32'sb0,32'sb0,32'sb0,32'sb0},BIAS=27,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=3,WEIGHTS='{-113,-184,-208,32'sb0,32'sb0,32'sb0,32'sb0,32'sb0},BIAS=210,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=3,WEIGHTS='{83,47,-79,32'sb0,32'sb0,32'sb0,32'sb0,32'sb0},BIAS=-43,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=3,WEIGHTS='{11,74,-61,32'sb0,32'sb0,32'sb0,32'sb0,32'sb0},BIAS=-42,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=3,WEIGHTS='{46,-13,61,32'sb0,32'sb0,32'sb0,32'sb0,32'sb0},BIAS=-78,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=3,WEIGHTS='{125,179,168,32'sb0,32'sb0,32'sb0,32'sb0,32'sb0},BIAS=-216,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=7,WEIGHTS='{42,-222,13,2,60,-101,316,32'sb0},BIAS=-59,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv" Line 1. Module neuron_1(NUM_INPUTS=7,WEIGHTS='{-88,8,-423,82,-59,16,-346,32'sb0},BIAS=155,V_TH=256) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
@@ -35,6 +46,7 @@ Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=3,WEIGHTS='{...
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=3,WEIGHTS='{...
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=3,WEIGHTS='{...
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=3,WEIGHTS='{...
+Compiling module xil_defaultlib.layer1
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=7,WEIGHTS='{...
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=7,WEIGHTS='{...
 Compiling module xil_defaultlib.snn_rgb(NUM_INPUTS_HIDDEN=3,NUM_...
