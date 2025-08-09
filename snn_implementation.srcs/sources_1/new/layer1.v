@@ -2,15 +2,15 @@
 
 module layer1 #(
   parameter NUM_INPUTS_HIDDEN = 3,
-  parameter NUM_INPUTS_OUT    = 7
+  parameter NUM_OUTPUTS       = 7
 )(
-  input        clk,
-  input        reset,
+  input                             clk,
+  input                             reset,
   
-  input        neuron_reset,
-  input [2:0]  spikes_in,
+  input                             neuron_reset,
+  input  [NUM_INPUTS_HIDDEN - 1:0]  spikes_in,
   
-  output [6:0] spikes_out
+  output [NUM_OUTPUTS - 1:0]        spikes_out
 );
 
   localparam integer v_th            = 256;

@@ -3,6 +3,7 @@ verilog xil_defaultlib  \
 "../../../../snn_implementation.srcs/sources_1/new/control.v" \
 "../../../../snn_implementation.srcs/sources_1/new/gen_input.v" \
 "../../../../snn_implementation.srcs/sources_1/new/layer1.v" \
+"../../../../snn_implementation.srcs/sources_1/new/layer2.v" \
 "../../../../snn_implementation.srcs/sources_1/new/snn_rgb.v" \
 
 sv xil_defaultlib  \
