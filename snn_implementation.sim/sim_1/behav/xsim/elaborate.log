@@ -6,11 +6,11 @@ Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-2861] module 'layer2' does not have a parameter named NUM_INPUTS_HIDDEN [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_rgb.v:98]
-WARNING: [VRFC 10-3705] select index 3 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:30]
-WARNING: [VRFC 10-3705] select index 4 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:34]
-WARNING: [VRFC 10-3705] select index 5 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:35]
-WARNING: [VRFC 10-3705] select index 6 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:36]
-WARNING: [VRFC 10-3705] select index 7 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:37]
+WARNING: [VRFC 10-3705] select index 3 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:29]
+WARNING: [VRFC 10-3705] select index 4 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:33]
+WARNING: [VRFC 10-3705] select index 5 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:34]
+WARNING: [VRFC 10-3705] select index 6 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:35]
+WARNING: [VRFC 10-3705] select index 7 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:36]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/control.v" Line 1. Module control(delay=75,layer_delay=5) doesn't have a timescale but at least one module in design has a timescale.
@@ -35,11 +35,11 @@ Compiling package vl.vl_types
 Compiling module xil_defaultlib.glbl
 Compiling module xil_defaultlib.control(delay=75,layer_delay=5)
 Compiling module xil_defaultlib.gen_input
-WARNING: [VRFC 10-3705] select index 3 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:30]
-WARNING: [VRFC 10-3705] select index 4 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:34]
-WARNING: [VRFC 10-3705] select index 5 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:35]
-WARNING: [VRFC 10-3705] select index 6 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:36]
-WARNING: [VRFC 10-3705] select index 7 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:37]
+WARNING: [VRFC 10-3705] select index 3 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:29]
+WARNING: [VRFC 10-3705] select index 4 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:33]
+WARNING: [VRFC 10-3705] select index 5 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:34]
+WARNING: [VRFC 10-3705] select index 6 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:35]
+WARNING: [VRFC 10-3705] select index 7 into 'spikes_i' is out of bounds [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:36]
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=3,WEIGHTS='{...
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=3,WEIGHTS='{...
 Compiling module xil_defaultlib.neuron_1(NUM_INPUTS=3,WEIGHTS='{...
