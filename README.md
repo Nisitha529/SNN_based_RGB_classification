@@ -23,3 +23,6 @@ Manages timing and synchronization across the system using configurable delay li
 ### tb_snn_rgb (Testbench)
 Provides verification capabilities for the complete system through file-based testing. The testbench reads input images in PPM format, applies appropriate video timing signals, and captures the output results to verify functionality against expected behavior.
 
+## SNN Output
+![SNN Output](.results_img_dir/snn-out.png)
+
