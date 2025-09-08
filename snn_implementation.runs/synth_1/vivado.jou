@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Sep  9 04:26:29 2025
+# Process ID: 55105
+# Current directory: /media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.runs/synth_1
+# Command line: vivado -log snn_rgb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source snn_rgb.tcl
+# Log file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.runs/synth_1/snn_rgb.vds
+# Journal file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.runs/synth_1/vivado.jou
+# Running On: nisitha-laptop, OS: Linux, CPU Frequency: 1199.502 MHz, CPU Physical cores: 4, Host memory: 16471 MB
+#-----------------------------------------------------------
+source snn_rgb.tcl -notrace

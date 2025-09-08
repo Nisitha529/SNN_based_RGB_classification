@@ -95,7 +95,7 @@ module snn_rgb #(
   );
 
   layer2 #(
-    .NUM_INPUTS_HIDDEN (7),
+    .NUM_INPUTS        (7),
     .NUM_OUTPUTS       (2)
   ) layer2_01 (
     .clk               (clk),

@@ -1,0 +1,416 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Sep  9 04:26:29 2025
+# Process ID: 55105
+# Current directory: /media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.runs/synth_1
+# Command line: vivado -log snn_rgb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source snn_rgb.tcl
+# Log file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.runs/synth_1/snn_rgb.vds
+# Journal file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.runs/synth_1/vivado.jou
+# Running On: nisitha-laptop, OS: Linux, CPU Frequency: 1199.502 MHz, CPU Physical cores: 4, Host memory: 16471 MB
+#-----------------------------------------------------------
+source snn_rgb.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1341.211 ; gain = 105.836 ; free physical = 214 ; free virtual = 5751
+Command: synth_design -top snn_rgb -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 55311
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1820.707 ; gain = 416.684 ; free physical = 226 ; free virtual = 4974
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'snn_rgb' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_rgb.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/control.v:1]
+	Parameter delay bound to: 75 - type: integer 
+	Parameter layer_delay bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'gen_input' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/gen_input.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'gen_input' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/gen_input.v:1]
+INFO: [Synth 8-6157] synthesizing module 'layer1' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/layer1.v:3]
+	Parameter NUM_INPUTS_HIDDEN bound to: 3 - type: integer 
+	Parameter NUM_OUTPUTS bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'neuron_1' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 3 - type: integer 
+	Parameter WEIGHTS bound to: 256'b1111111111111111111111111111111100000000000000000000000000001010000000000000000000000000011001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb11111111111111111111111110110001 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized0' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 3 - type: integer 
+	Parameter WEIGHTS bound to: 256'b1111111111111111111111111011011011111111111111111111111110110101111111111111111111111111011111010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb00000000000000000000000000011011 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized0' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized1' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 3 - type: integer 
+	Parameter WEIGHTS bound to: 256'b1111111111111111111111111000111111111111111111111111111101001000111111111111111111111111001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb00000000000000000000000011010010 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized1' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized2' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 3 - type: integer 
+	Parameter WEIGHTS bound to: 256'b0000000000000000000000000101001100000000000000000000000000101111111111111111111111111111101100010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb11111111111111111111111111010101 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized2' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized3' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 3 - type: integer 
+	Parameter WEIGHTS bound to: 256'b0000000000000000000000000000101100000000000000000000000001001010111111111111111111111111110000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb11111111111111111111111111010110 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized3' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized4' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 3 - type: integer 
+	Parameter WEIGHTS bound to: 256'b0000000000000000000000000010111011111111111111111111111111110011000000000000000000000000001111010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb11111111111111111111111110110010 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized4' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized5' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 3 - type: integer 
+	Parameter WEIGHTS bound to: 256'b0000000000000000000000000111110100000000000000000000000010110011000000000000000000000000101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb11111111111111111111111100101000 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized5' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'layer1' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/layer1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'layer2' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/layer2.v:3]
+	Parameter NUM_INPUTS bound to: 7 - type: integer 
+	Parameter NUM_OUTPUTS bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized6' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 7 - type: integer 
+	Parameter WEIGHTS bound to: 256'b0000000000000000000000000010101011111111111111111111111100100010000000000000000000000000000011010000000000000000000000000000001000000000000000000000000000111100111111111111111111111111100110110000000000000000000000010011110000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb11111111111111111111111111000101 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized6' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'neuron_1__parameterized7' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+	Parameter NUM_INPUTS bound to: 7 - type: integer 
+	Parameter WEIGHTS bound to: 256'b1111111111111111111111111010100000000000000000000000000000001000111111111111111111111110010110010000000000000000000000000101001011111111111111111111111111000101000000000000000000000000000100001111111111111111111111101010011000000000000000000000000000000000 
+	Parameter BIAS bound to: 32'sb00000000000000000000000010011011 
+	Parameter V_TH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron_1__parameterized7' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'layer2' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/layer2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snn_rgb' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_rgb.v:1]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-6014] Unused sequential element total_input_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:46]
+WARNING: [Synth 8-6014] Unused sequential element new_voltage_reg was removed.  [/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.srcs/sources_1/new/snn_neuron.sv:47]
+WARNING: [Synth 8-3917] design snn_rgb has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design snn_rgb has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design snn_rgb has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port r_st[31] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[30] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[29] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[28] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[27] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[26] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[25] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[24] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[23] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[22] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[21] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[20] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[19] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[18] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[17] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[16] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[15] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[14] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[13] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[12] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[11] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[10] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[9] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_st[8] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[31] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[30] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[29] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[28] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[27] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[26] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[25] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[24] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[23] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[22] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[21] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[20] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[19] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[18] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[17] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[16] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[15] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[14] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[13] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[12] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[11] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[10] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[9] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port g_st[8] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[31] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[30] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[29] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[28] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[27] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[26] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[25] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[24] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[23] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[22] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[21] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[20] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[19] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[18] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[17] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[16] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[15] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[14] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[13] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[12] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[11] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[10] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[9] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_st[8] in module gen_input is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable_in[2] in module snn_rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable_in[1] in module snn_rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable_in[0] in module snn_rgb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1898.676 ; gain = 494.652 ; free physical = 227 ; free virtual = 4856
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1916.488 ; gain = 512.465 ; free physical = 222 ; free virtual = 4850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1924.492 ; gain = 520.469 ; free physical = 222 ; free virtual = 4850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1933.398 ; gain = 529.375 ; free physical = 209 ; free virtual = 4838
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 8     
+	   4 Input   32 Bit       Adders := 20    
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               75 Bit    Registers := 3     
+	               32 Bit    Registers := 26    
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design snn_rgb has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design snn_rgb has port led[1] driven by constant 0
+WARNING: [Synth 8-3917] design snn_rgb has port led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port enable_in[2] in module snn_rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable_in[1] in module snn_rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable_in[0] in module snn_rgb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 267 ; free virtual = 4693
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 257 ; free virtual = 4685
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 252 ; free virtual = 4681
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|snn_rgb     | vs_out_reg                    | 75     | 1     | NO           | NO                 | YES               | 0      | 3       | 
+|snn_rgb     | hs_out_reg                    | 77     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|snn_rgb     | control_inst/de_delay_reg[74] | 74     | 1     | NO           | NO                 | YES               | 0      | 3       | 
+|snn_rgb     | control_inst/ly2_delay_reg[9] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|snn_rgb     | control_inst/ly1_delay_reg[4] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   198|
+|3     |LUT1    |   146|
+|4     |LUT2    |   638|
+|5     |LUT3    |   498|
+|6     |LUT4    |   282|
+|7     |LUT5    |    88|
+|8     |LUT6    |    40|
+|9     |SRL16E  |     2|
+|10    |SRLC32E |     9|
+|11    |FDRE    |   467|
+|12    |FDSE    |     2|
+|13    |IBUF    |    29|
+|14    |OBUF    |    31|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------------------+------+
+|      |Instance         |Module                   |Cells |
++------+-----------------+-------------------------+------+
+|1     |top              |                         |  2431|
+|2     |  control_inst   |control                  |    24|
+|3     |  gen_input_inst |gen_input                |    91|
+|4     |  layer1_01      |layer1                   |  1666|
+|5     |    hidden0_inst |neuron_1                 |   223|
+|6     |    hidden1_inst |neuron_1__parameterized0 |   250|
+|7     |    hidden2_inst |neuron_1__parameterized1 |   256|
+|8     |    hidden3_inst |neuron_1__parameterized2 |   224|
+|9     |    hidden4_inst |neuron_1__parameterized3 |   234|
+|10    |    hidden5_inst |neuron_1__parameterized4 |   227|
+|11    |    hidden6_inst |neuron_1__parameterized5 |   252|
+|12    |  layer2_01      |layer2                   |   501|
+|13    |    output0_inst |neuron_1__parameterized6 |   241|
+|14    |    output1_inst |neuron_1__parameterized7 |   260|
++------+-----------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4674
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 105 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.883 ; gain = 658.859 ; free physical = 265 ; free virtual = 4674
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.891 ; gain = 658.859 ; free physical = 265 ; free virtual = 4674
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2068.820 ; gain = 0.000 ; free physical = 549 ; free virtual = 4957
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2203.535 ; gain = 0.000 ; free physical = 452 ; free virtual = 4898
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 43f2bc1
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 2203.570 ; gain = 823.359 ; free physical = 453 ; free virtual = 4900
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1646.670; main = 1394.111; forked = 355.769
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3059.520; main = 2203.539; forked = 996.633
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2227.547 ; gain = 0.000 ; free physical = 456 ; free virtual = 4902
+INFO: [Common 17-1381] The checkpoint '/media/nisitha/My_Passport/MOODLE/Vivado_projects/SNN_project/snn_implementation/snn_implementation.runs/synth_1/snn_rgb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file snn_rgb_utilization_synth.rpt -pb snn_rgb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  9 04:28:03 2025...
