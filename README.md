@@ -24,5 +24,5 @@ Manages timing and synchronization across the system using configurable delay li
 Provides verification capabilities for the complete system through file-based testing. The testbench reads input images in PPM format, applies appropriate video timing signals, and captures the output results to verify functionality against expected behavior.
 
 ## SNN Output
-![SNN Output](.results_img_dir/snn-out.png)
+<img width="2048" height="1282" alt="snn-out" src="https://github.com/user-attachments/assets/df9e363e-8bb7-4184-8e2a-21ac0a22bfa4" />
 
